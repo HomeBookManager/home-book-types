@@ -12,7 +12,7 @@ const excludeExtensions = [];
 export default {
   input: [
     './src/index.ts',
-    ...getFiles('./src/constants', extensions, excludeExtensions),
+    ...getFiles('./src/types', extensions, excludeExtensions),
   ],
   output: {
     dir: 'dist',
