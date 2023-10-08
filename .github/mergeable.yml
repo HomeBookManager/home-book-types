@@ -1,0 +1,28 @@
+version: 2
+mergeable:
+  - when: pull_request.*
+    validate:
+      - do: assignee
+        min:
+          count: 1
+          message: 'There must be at least one person assigned.'
+      - do: label
+        no_empty:
+          enabled: true
+          message: 'You have to choose label'
+        must_include:
+          regex: 'bug|documentation|enhancement|poc'
+          message: 'You can choose one of the options: bug | documentation | enhancement | poc'
+      - do: description
+        no_empty:
+          enabled: true
+          message: 'Message cannot be empty.'
+      - do: title
+        must_include:
+          regex: '^(bugfix|feature|hotfix)\/HB-([0-9]{1,}) - ([a-z0-9[\]\-/ ]{1,})$'
+          message: 'PR title needs to contain JIRA ticket identifier.'
+    pass:
+      - do: checks
+        status: 'success'
+        payload:
+          title: 'Mergeable Run have been Completed!'

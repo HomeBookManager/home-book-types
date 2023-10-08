@@ -1,0 +1,22 @@
+{
+  "branchNameLinter": {
+    "banned": ["wip"],
+    "disallowed": [],
+    "msgBranchBanned": "Branches with the name \"%s\" are not allowed.",
+    "msgBranchDisallowed": "Pushing to \"%s\" is not allowed, use git-flow.",
+    "msgDoesNotMatchRegex": "Branch \"%s\" does not match the allowed pattern: \"%s\"",
+    "msgPrefixNotAllowed": "Branch prefix \"%s\" is not allowed.",
+    "msgPrefixSuggestion": "Instead of \"%s\" try \"%s\".",
+    "prefixes": ["d", "m", "T"],
+    "skip": ["skip-ci"],
+    "suggestions": {
+      "features": "feature",
+      "feat": "feature",
+      "fix": "hotfix",
+      "releases": "release"
+    },
+    "regex": "^HB-([0-9]{1,})((-([a-z0-9]{1,})){1,})$",
+    "regexOptions": "i",
+    "separator": ""
+  }
+}

@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx branch-name-lint branchlint.config.json
+npm run eslint-ts
+npm run prettier:check
