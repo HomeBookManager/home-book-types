@@ -5,6 +5,6 @@ export enum Env {
 }
 
 export enum Theme {
-  dark = 'Dark',
-  light = 'Light',
+  dark = 'dark',
+  light = 'light',
 }
