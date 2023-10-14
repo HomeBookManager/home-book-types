@@ -7,7 +7,7 @@
     "msgDoesNotMatchRegex": "Branch \"%s\" does not match the allowed pattern: \"%s\"",
     "msgPrefixNotAllowed": "Branch prefix \"%s\" is not allowed.",
     "msgPrefixSuggestion": "Instead of \"%s\" try \"%s\".",
-    "prefixes": ["d", "m", "T"],
+    "prefixes": ["H", "T", "d", "m"],
     "skip": ["skip-ci"],
     "suggestions": {
       "features": "feature",

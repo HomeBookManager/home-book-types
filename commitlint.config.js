@@ -10,7 +10,7 @@ module.exports = {
         const branchNumber = await branch
           .get()
           .then((name) => name.match(/\d+/));
-        const regex = new RegExp(`^HB-${branchNumber}): ([a-zA-Z-& ]{1,}$`);
+        const regex = new RegExp(`^HB-${branchNumber}: ([a-zA-Z-& ]{1,})$`);
 
         if (regex.test(parsed.header)) {
           return [true];
