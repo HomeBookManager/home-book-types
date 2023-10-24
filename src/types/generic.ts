@@ -11,7 +11,7 @@ export type TObjectArray<T> = Array<keyof T>;
 
 export type TPickAliases<
   T,
-  PropMap extends Partial<Record<keyof T, string>>
+  PropMap extends Partial<Record<keyof T, string>>,
 > = {
   [K in keyof PropMap as K extends keyof T
     ? PropMap[K] extends string
@@ -19,3 +19,5 @@ export type TPickAliases<
       : never
     : never]: K extends keyof T ? T[K] : never;
 };
+
+export type TValueObj<T> = T[keyof T];
