@@ -1,4 +1,4 @@
-export type Char =
+export type TChar =
   | 'a'
   | 'b'
   | 'c'
