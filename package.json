@@ -8,7 +8,7 @@
   "keywords": [
     "typescript"
   ],
-  "version": "1.0.10",
+  "version": "1.0.11",
   "repository": {
     "type": "git",
     "url": "https://github.com/HomeBookManager/home-book-types"
@@ -30,9 +30,9 @@
     "@rollup/plugin-typescript": "^11.1.5",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "branch-name": "^1.0.0",
-    "branch-name-lint": "^2.1.1",
     "commitlint-plugin-function-rules": "^2.0.2",
     "eslint": "^8.51.0",
+    "home-book-scripts": "^1.0.0",
     "husky": "^8.0.3",
     "prettier": "^3.0.3",
     "rollup-plugin-local-resolve": "^1.0.7",

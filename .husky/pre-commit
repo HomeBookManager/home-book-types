@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+node ./node_modules/home-book-scripts/scripts/branchNameLint.js
 npx branch-name-lint branchlint.config.json
 npm run eslint-ts
 npm run prettier:check
