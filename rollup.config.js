@@ -3,8 +3,8 @@ import resolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
 import typescript from '@rollup/plugin-typescript';
 
-// utils
-import { getFiles } from './scripts/buildUtils';
+// @home-book
+const getFiles = require('home-book-scripts/scripts/buitldUitls');
 
 const extensions = ['.ts'];
 const excludeExtensions = [];
