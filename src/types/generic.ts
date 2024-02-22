@@ -1,8 +1,3 @@
-export declare type TAction<T = any> = {
-  payload?: T;
-  type: string;
-};
-
 export type TNestedKeyOf<OBJECT_TYPE extends object> = {
   [KEY in keyof OBJECT_TYPE &
     (string | number)]: OBJECT_TYPE[KEY] extends object
