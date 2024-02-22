@@ -5,6 +5,6 @@ export declare type TAction<T = any> = {
 
 declare const $CombinedState: unique symbol;
 
-export type CombinedState<S> = {
+export type TCombinedState<S> = {
   readonly [$CombinedState]?: undefined;
 } & S;
